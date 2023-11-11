@@ -1,0 +1,152 @@
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 20px;
+
+}
+
+.section {
+    margin: 10px 0;
+    background: white;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.section__header {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+
+.section__body {
+    padding: 20px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media(max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+}
+
+.form__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form__button {
+    padding: 10px;
+    background: hsl(180, 100%, 25%);
+    color: white;
+    border: none;
+    transition: color 0.3s;
+}
+
+.form__button:hover {
+    background: hsl(180, 100%, 30%);
+    transform: scale(1, 1);
+}
+
+.form__button:active {
+    background: hsl(180, 100%, 50%);
+}
+
+.tasks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tasks__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tasks__button--toggleDone {
+    background: hsl(120, 61%, 34%);
+}
+
+.tasks__button--toggleDone:hover {
+    background: hsl(120, 61%, 39%);
+}
+
+.tasks__button--toggleDone:active {
+    background: hsl(120, 61%, 44%);
+}
+
+.tasks__button {
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
+}
+
+.tasks__button--remove {
+    background: hsl(348, 83%, 47%);
+}
+
+.tasks__button--remove:hover {
+    background: hsl(348, 83%, 52%);
+}
+
+.tasks__button--remove:active {
+    background: hsl(348, 83%, 57%);
+}
+
+.tasks__item--hidden {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons__button {
+    background: transparent;
+    color: teal;
+    border: none;
+    margin: 0 0 0 20px;
+    transition: color 0.3s;
+}
+
+.buttons__button:disabled {
+    color: #ccc;
+}
+
+.buttons__button:hover {
+    color:hsl(180, 100%, 40%)080;
+}
+
+.buttons__button:active {
+color:hsl(180, 100%, 60%)080;
+}
+
+.section__title {
+    font-size: 20px;
+    margin: 0;
+}
