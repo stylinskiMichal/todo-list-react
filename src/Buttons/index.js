@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Buttons = ({tasks, hideDoneTasks}) => {
+const Buttons = ({tasks, hideDone}) => {
     if(tasks.length === 0) {
         return null;
     }
@@ -8,7 +8,7 @@ const Buttons = ({tasks, hideDoneTasks}) => {
     return (
         <div className=" buttons__button">
             <button className="buttons__button ">
-            {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+            {hideDone ? "Pokaż" : "Ukryj"} ukończone
         </button>
         <button
             className="buttons__button"
@@ -26,12 +26,12 @@ const Buttons = ({tasks, hideDoneTasks}) => {
 export default Buttons;
 
 /*
-const Buttons = ({ tasks, hideDoneTasks }) => (
+const Buttons = ({ tasks, hideDone }) => (
         <div className=" buttons__button">
             {tasks.length > 0 && (
             <React.Fragment>
                 <button className="buttons__button ">
-                {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+                {hideDone ? "Pokaż" : "Ukryj"} ukończone
             </button>
             <button
                 className="buttons__button"
